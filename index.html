@@ -3,14 +3,40 @@
     <head>
         <title>Search</title>
     </head>
-    <body>
+    <style>
+        input[type=text] {
+              line-height: 200px;
+              height: 20px;
+              width: 50%;
+              text-align: center;
+              border-radius: 20px;
+              background-color: black;
+              border-color: white;
+        }
+        input[type=submit], input[type=button] {
+            width: 15%;
+            padding: 5px;
+            margin: 7px;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+    </style>
+    <body style="background-color: black;">
         <div class="upper-right-corner">
-        <a href="https://google.com/webhp?sa=X&hl=ru&output=search&tbm=isch">Images</a>
-        <a href="./advanced-search.html">Advanced Search</a>
+            <a href="https://google.com/webhp?sa=X&hl=ru&output=search&tbm=isch">Images</a>
+            <a href="./advanced-search.html">Advanced Search</a>
         </div>
+        <div class="search-toolbar" align="center" style="margin-top: 100px;">
+            <img src="./img1.png">
             <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+                <div style="margin: 20px;"><input type="text" name="q"></div>
+                <input type="submit" value="Google Search">
+                <input type="button" onclick="document.location='https://google.com/doodles'" value="Lucky Search">
+            </form>
+        </div>
     </body>
 </html>
