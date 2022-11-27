@@ -28,3 +28,18 @@ img {
         color: white;
          font-size: 12px;
 }
+
+.grid {
+        display: grid;
+        padding: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        grid-template-columns: 200px 200px auto;
+}
+        .grid-item {
+            color: white;
+            font: Arial;
+            font-size: 14px;
+            padding-left: 20px;
+            margin-right: 20px;
+}
